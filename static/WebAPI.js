@@ -24,7 +24,7 @@ async function OAuthWithPKCE() {
         const hashed = await sha256(codeVerifier)
         const codeChallenge = base64encode(hashed);
 
-        const clientId = 'f6577adbddb04348a34cb8600148c25a';
+        const clientId = SPOTIFY_CLIENT_ID;
         const redirectUri = 'http://localhost:8888/callback';
 
         const scope = 'user-read-private user-read-email';
