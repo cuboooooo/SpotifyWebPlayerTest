@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>Test Flask</title>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="{{ url_for('static', filename='WebAPI.js') }}"></script>
+    <script src="{{ url_for('static', filename='WebPlaybackSDK.js') }}"></script>
+</head>
+<body>
+    <p>Nerd</p>
+    <button id="prev">Prev Track</button>
+    <button id="togglePlay">Toggle Play</button>
+    <button id="next">Next Track</button>
+
+
+</body>
